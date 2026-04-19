@@ -9,62 +9,125 @@ sources: []
 
 # Wiki 总索引
 
-## AI 技术类
+> Wiki是永久知识库。Memory只存指向Wiki的指针，不存详细内容。
 
-### 🤖 3DGS（高斯泼溅）— 9个研究方向
+---
 
-| # | 子方向 | 说明 | 状态 |
-|---|--------|------|------|
-| 1 | [[3dgs-learning|总览]] | 研究路线图 + 工具链 | 🔄 |
-| 2 | [[3dgs-training|训练加速]] | FastGS（100秒训练）| 🔄 |
-| 3 | [[3dgs-compression|模型压缩]] | HAC++剪枝/量化，0.8MB量级 | 🆕 |
-| 4 | [[3dgs-large-scale|大规模场景]] | LongSplat/DroneSplat/城市重建 | 🔄 |
-| 5 | [[3dgs-surface|表面重建]] | SuGaR、GS→mesh导出 | ⏳ |
-| 6 | [[3dgs-slam|SLAM导航]] | GS-SLAM、机器人定位 | ⏳ |
-| 7 | [[3dgs-dynamic|动态场景]] | 4DGS、91×压缩比 | ⏳ |
-| 8 | [[3dgs-semantic|语义理解]] | LanguageGS、开放词汇查询 | ⏳ |
-| 9 | [[3dgs-editing|编辑与生成]] | GaussianEditor、Text-to-3D | ⏳ |
+# 🌍 经济研究
 
-### 🏗️ 工程AI识别
+## 🎯 主攻（最高优先级，当前重心）
 
-| 课题 | 说明 | 状态 |
+| 课题 | 状态 | 说明 |
 |------|------|------|
-| [[drone-image-recognition|航拍图像识别]] | 施工现场航拍图量化统计+安全分析 | 🔄 |
-| [[3d-scene-recognition|三维场景识别]] | 点云语义分割、SLAM建图 | ⏳ |
-| [[cad-blueprint-recognition|CAD图纸识别]] | DWG/DXF解析、OCR、图元提取 | ⏳ |
+| [[china-debt-resolution/index|化债研究]] | 🔄 每周cron | 隐性债务/城投债/化债路径，周一5:00推送 |
+| [[economics/research/daily-observation|经济每日观察]] | 🔄 进行中 | 高频跟踪：螺纹钢/猪肉/地产成交/汇率 |
 
-### 🔄 自动化研究
+## 🔧 跟进（稳步推进）
 
-| 课题 | 说明 | 状态 |
+| 课题 | 状态 | 说明 |
 |------|------|------|
-| [[browser-automation|浏览器自动化]] | Chrome DevTools MCP，CDP协议控制 | ✅ 已完成 |
-| [[agent-computer-use|Agent Computer Use]] | Agent S，GUI自动化，OSWorld超越人类 | ⏳ |
+| [[economics/research/real-estate|房地产市场]] | ⏳ 框架已建 | 70城房价/销售面积/开发商现金流 |
+| [[economics/research/infrastructure|基建设施]] | ⏳ 框架已建 | 专项债/城投基建/螺纹钢先行指标 |
 
-## 🌍 大环境
+## 🔮 储备（观察探索期）
 
-> 社会宏观情况：经济、政策、行业趋势
-
-| 课题 | 说明 | 状态 |
+| 课题 | 状态 | 说明 |
 |------|------|------|
-| [[china-debt-resolution/index|化债研究]] | 中国政府债务问题，周更推送 | 🔄 每周cron |
+| [[economics/research/pork-cycle|猪肉周期]] | ⏳ 框架已建 | CPI核心分项，3-4年一轮 |
+| [[steel-industry|钢铁行业量化]] | ⏳ 框架已建 | 建材—城投债—化债传导链 |
 
-## 🏠 小环境
+## ✅ 已完成
 
-> 公司、部门、团队微观情况
+| 课题 | 说明 |
+|------|------|
+| 城投债研究 | 68万亿/2027大限/区域分布 |
 
-| 课题 | 说明 | 状态 |
+---
+
+# 🤖 AI技术
+
+## 🎯 主攻（最高优先级，当前重心）
+
+| 课题 | 状态 | 说明 |
 |------|------|------|
-| [[micro-environment|小环境]] | 公司·部门·团队情况 | ⏳ |
-| [[career-development|职业生涯发展]] | 职业路径·角色定位·价值思考 | ⏳ |
+| [[agent-computer-use|Agent Computer Use]] | ⏳ 依赖Grounding模型 | Agent S / SightFlow / OSWorld超越人类 |
+| [[browser-automation|浏览器自动化]] | ✅ 已完成 | Chrome DevTools MCP，CDP协议控制 |
 
-## ⚙️ 系统配置类
+## 🔧 跟进（稳步推进）
+
+| 课题 | 状态 | 说明 |
+|------|------|------|
+| [[3dgs-learning|3DGS]] | 🔄 9方向并行 | training/compression/large-scale/surface/slam/dynamic/semantic/editing |
+| [[drone-image-recognition|航拍图像识别]] | 🔄 进行中 | SAM分割/施工进度量化/安全分析 |
+
+## 🔮 储备（观察探索期）
+
+| 课题 | 状态 | 说明 |
+|------|------|------|
+| [[cli-anything|CLI-Anything]] | ⏳ 方法论 | 把任意工具封装为CLI标准接口 |
+| [[vlm-desktop-control|VLM桌面控制]] | ⏳ 框架 | 视觉语言模型控制Windows GUI |
+| [[echoman|EchoMan 数字分身]] | ⏳ 框架 | 语音克隆/数字人/AI替身 |
+| [[3dgs-learning|3DGS工程应用]] | ⏳ 方向 | 桥梁施工可视化 |
+
+## ✅ 已完成
+
+| 课题 | 说明 |
+|------|------|
+| 3DGS知识库 | 14期视频+字幕完整收录 |
+| Gaussian Splatting | 14期保姆教程全部转写 |
+
+---
+
+# 🔗 依赖链
+
+> 看清项目之间的前置依赖，合理安排顺序
+
+```
+Grounding模型（UI-TARS INT4量化）
+    │
+    ├──▶ Agent S部署
+    │
+    └──▶ SightFlow落地
+    
+SAM模型 / LangBot-Map
+    │
+    ├──▶ 航拍图像识别
+    │
+    └──▶ 3DGS工程应用（桥梁可视化）
+
+yt-dlp + Whisper
+    │
+    └──▶ 视频转写技能
+```
+
+---
+
+# 👤 个人
+
+| 课题 | 状态 | 说明 |
+|------|------|------|
+| [[micro-environment|小环境]] | ⏳ | 公司·部门·团队情况 |
+| [[career-development|职业生涯发展]] | ⏳ | 职业路径·角色定位·价值思考 |
+
+---
+
+# ⚙️ 系统配置
 
 | 项目 | 说明 |
 |------|------|
-| [[tts|TTS 语音合成]] | Edge TTS（主力）+ MiniMax（备用） |
+| [[tts|TTS语音合成]] | Edge TTS（主力）+ MiniMax（备用） |
 | [[environment|环境工具链]] | WSL2/Windows双环境、代理、Obsidian |
 | [[memory-strategy|Memory与Wiki策略]] | Wiki持久化、memory只存指针 |
 
 ---
 
-> Wiki是永久知识库。Memory只存指向Wiki的指针，不存详细内容。
+# 📂 背景知识
+
+> 课题研究所需的概念、实体、对比素材
+
+| 分类 | 内容 |
+|------|------|
+| 概念 | debt-gap / debt-resolution / deflation / fiscal-deficit / investment-collapse / lgfv-bond-maturity / property-crisis |
+| 实体 | hidden-debt / swap-bond / local-government-financing-vehicles / ministry-of-finance / central-economic-work-conference |
+| 对比 | china-vs-japan-vs-euro-crisis / debt-scale-gap |
+| 原始素材 | 6篇化债研究原始文章（raw/） |
