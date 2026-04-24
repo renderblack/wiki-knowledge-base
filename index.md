@@ -1,133 +1,74 @@
 ---
 title: Wiki 总索引
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-04-22
 type: index
-tags: []
-sources: []
 ---
 
-# Wiki 总索引
+# 🌌 元课题：世界观（所有课题的底层逻辑）
 
-> Wiki是永久知识库。Memory只存指向Wiki的指针，不存详细内容。
+| 课题 | 进度 | 核心 |
+|------|------|------|
+| [[worldview/PROGRESS|世界观]] | 🔄 进行中 | 熵增→逆熵→人类→AI→意义→自我重建 |
 
 ---
 
-# 🌍 经济研究
 
-## 🎯 主攻（最高优先级，当前重心）
+---
 
-| 课题 | 状态 | 说明 |
+# 🏗️ 虚拟技术部产品项目
+
+| 课题 | 进度 | 说明 |
 |------|------|------|
-| [[china-debt-resolution/index|化债研究]] | 🔄 每周cron | 隐性债务/城投债/化债路径，周一5:00推送 |
-| [[economics/research/daily-observation|经济每日观察]] | 🔄 进行中 | 高频跟踪：螺纹钢/猪肉/地产成交/汇率 |
+| [[projects/construction-progress-viz-system/PROGRESS|施工进度可视化管理系统]] | ✅ 已交付 | 兴土智瞰V1.8/G202501/施工进度/预警/RBAC |
+| [[projects/3d-visualization-platform/PROGRESS|交通工程三维可视化平台]] | ✅ 已交付 | UnityPlate V1.3/GIS/无人机/多角色协同 |
+| [[projects/enterprise-software-implementation/PROGRESS|集成平台战略执行平台]] | 🔧 跟进中 | 传统企业软件落地方法论（虚拟技术部顶层参照） |
 
-## 🔧 跟进（稳步推进）
+| [[projects/enterprise-software-implementation/ai-agent-enterprise-cases|AI Agent企业级落地案例]] | 🔧 跟进中 | 9行业案例/共性痛点/跨行业方法论 |
+# 👤 职业发展
 
-| 课题 | 状态 | 说明 |
+| 课题 | 进度 | 说明 |
 |------|------|------|
-| [[economics/research/real-estate|房地产市场]] | ⏳ 框架已建 | 70城房价/销售面积/开发商现金流 |
-| [[economics/research/infrastructure|基建设施]] | ⏳ 框架已建 | 专项债/城投基建/螺纹钢先行指标 |
+| [[career-development|职业生涯发展]] | 🔧 跟进中 | 职业路径·角色定位·价值思考 |
+| [[micro-environment|内部环境]] | 🔧 跟进中 | 公司·部门·团队情况 |
+| [[self-understanding|自我理解]] | 🔧 跟进中 | 原生家庭创伤觉察/强迫性重复/疗愈工具 |
 
-## 🔮 储备（观察探索期）
+---
 
-| 课题 | 状态 | 说明 |
+# 🌌 外部环境
+
+| 课题 | 进度 | 说明 |
 |------|------|------|
-| [[economics/research/pork-cycle|猪肉周期]] | ⏳ 框架已建 | CPI核心分项，3-4年一轮 |
-| [[steel-industry|钢铁行业量化]] | ⏳ 框架已建 | 建材—城投债—化债传导链 |
+| [[economics/research/china-cost-bearer/PROGRESS|中国买单者]] | 🔧 跟进中 | 改革开放代价/五轮转移/制度成本 |
+| [[economics/research/china-cost-bearer/power-structure-analysis|权力运行底层逻辑]] | 🔧 跟进中 | 狮驼岭与现代启示/神佛纵容/旁观者共谋 |
+| [[economics/research/china-cultural-logic/PROGRESS|差序格局与工业化]] | 🔧 跟进中 | 差序格局/契约文化/传统企业诊断/职业策略 |
+| [[company-research/PROGRESS|公司发展研究]] | 🔧 跟进中 | 新图公司战略/竞争/风险/组织分析 |
 
-## ✅ 已完成
+---
 
-| 课题 | 说明 |
-|------|------|
-| 城投债研究 | 68万亿/2027大限/区域分布 |
+# 🛠️ 工程应用
+
+| 课题 | 进度 | 说明 |
+|------|------|------|
+| [[projects/3dgs-tile-compression/PROGRESS|3DGS Tile压缩]] | 🔧 跟进中 | 524国道/137 Tile/4.18×压缩 |
+| [[projects/drone-image-recognition|航拍图像识别]] | 🔧 跟进中 | GridMaster/3DGS/影像分析 |
+| [[projects/cad-blueprint-recognition/PROGRESS|CAD图纸识别]] | 🔧 跟进中 | Phase 0完成/Phase 1待启动 |
 
 ---
 
 # 🤖 AI技术
 
-## 🎯 主攻（最高优先级，当前重心）
-
-| 课题 | 状态 | 说明 |
+| 课题 | 进度 | 说明 |
 |------|------|------|
-| [[agent-computer-use|Agent Computer Use]] | ⏳ 依赖Grounding模型 | Agent S / SightFlow / OSWorld超越人类 |
-| [[browser-automation|浏览器自动化]] | ✅ 已完成 | Chrome DevTools MCP，CDP协议控制 |
+| [[projects/agent-computer-use/PROGRESS|Agent Computer Use]] | 🔮 储备 | AI Agent/Claude/自动化 |
 
-## 🔧 跟进（稳步推进）
+---
 
-| 课题 | 状态 | 说明 |
-|------|------|------|
-| [[3dgs-learning|3DGS]] | 🔄 9方向并行 | training/compression/large-scale/surface/slam/dynamic/semantic/editing |
-| [[drone-image-recognition|航拍图像识别]] | 🔄 进行中 | SAM分割/施工进度量化/安全分析 |
+# 📚 知识库
 
-## 🔮 储备（观察探索期）
-
-| 课题 | 状态 | 说明 |
-|------|------|------|
-| [[cli-anything|CLI-Anything]] | ⏳ 方法论 | 把任意工具封装为CLI标准接口 |
-| [[vlm-desktop-control|VLM桌面控制]] | ⏳ 框架 | 视觉语言模型控制Windows GUI |
-| [[echoman|EchoMan 数字分身]] | ⏳ 框架 | 语音克隆/数字人/AI替身 |
-| [[3dgs-learning|3DGS工程应用]] | ⏳ 方向 | 桥梁施工可视化 |
-
-## ✅ 已完成
-
-| 课题 | 说明 |
+| 类别 | 说明 |
 |------|------|
-| 3DGS知识库 | 14期视频+字幕完整收录 |
-| Gaussian Splatting | 14期保姆教程全部转写 |
+| [[knowledge/llm-landscape|LLM全景]] | 模型架构/能力/行业格局 |
+| [[knowledge/ai-agent-landscape|AI Agent全景]] | Agent框架/Computer Use/多模态 |
+| [[knowledge/3dgs-progress|3DGS进展]] | Gaussian Splatting/PLY压缩/SuperSplat |
 
----
-
-# 🔗 依赖链
-
-> 看清项目之间的前置依赖，合理安排顺序
-
-```
-Grounding模型（UI-TARS INT4量化）
-    │
-    ├──▶ Agent S部署
-    │
-    └──▶ SightFlow落地
-    
-SAM模型 / LangBot-Map
-    │
-    ├──▶ 航拍图像识别
-    │
-    └──▶ 3DGS工程应用（桥梁可视化）
-
-yt-dlp + Whisper
-    │
-    └──▶ 视频转写技能
-```
-
----
-
-# 👤 个人
-
-| 课题 | 状态 | 说明 |
-|------|------|------|
-| [[micro-environment|小环境]] | ⏳ | 公司·部门·团队情况 |
-| [[career-development|职业生涯发展]] | ⏳ | 职业路径·角色定位·价值思考 |
-
----
-
-# ⚙️ 系统配置
-
-| 项目 | 说明 |
-|------|------|
-| [[tts|TTS语音合成]] | Edge TTS（主力）+ MiniMax（备用） |
-| [[environment|环境工具链]] | WSL2/Windows双环境、代理、Obsidian |
-| [[memory-strategy|Memory与Wiki策略]] | Wiki持久化、memory只存指针 |
-
----
-
-# 📂 背景知识
-
-> 课题研究所需的概念、实体、对比素材
-
-| 分类 | 内容 |
-|------|------|
-| 概念 | debt-gap / debt-resolution / deflation / fiscal-deficit / investment-collapse / lgfv-bond-maturity / property-crisis |
-| 实体 | hidden-debt / swap-bond / local-government-financing-vehicles / ministry-of-finance / central-economic-work-conference |
-| 对比 | china-vs-japan-vs-euro-crisis / debt-scale-gap |
-| 原始素材 | 6篇化债研究原始文章（raw/） |

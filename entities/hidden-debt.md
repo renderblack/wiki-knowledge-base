@@ -1,10 +1,10 @@
 ---
 title: 隐性债务（Hidden Debt）
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-04-20
 type: entity
 tags: [hidden-debt, local-gov, debt-resolution]
-sources: [raw/articles/caixin-2026-debt-map.md, raw/articles/sina-swap-bond-2026.md, raw/articles/cls-debt-resolution-midterm.md, raw/articles/thinkchina-10trillion-gap.md]
+sources: [raw/articles/caixin-2026-budget-historic-shift.md, raw/articles/sina-huazhai-acceleration-apr17.md, raw/articles/stcn-huazhai-new-trends-feb2026.md, raw/articles/sina-swap-bond-2026.md, raw/articles/caixin-2026-debt-map.md, raw/articles/cls-debt-resolution-midterm.md]
 ---
 
 # 隐性债务
@@ -17,12 +17,17 @@ sources: [raw/articles/caixin-2026-debt-map.md, raw/articles/sina-swap-bond-2026
 
 | Fact | Data |
 |------|------|
+| 2018年规模 | **28.6万亿** |
 | 2023年末余额 | **14.3万亿** |
 | 2024年末余额 | **10.5万亿**（减少近4万亿） |
-| 化债后目标（2028年） | **2.3万亿** |
+| 2025年末（估计） | **约6.5万亿** |
+| 2026年末（预测） | **约2.5万亿** |
+| 化债后目标（2028年） | **约2.3万亿** |
 | 每年消化额 | 2.86万亿 → 4600亿（减少约83%） |
-| 平均利息成本降幅 | **>2.5个百分点**，节约利息>4500亿 |
+| 平均利息成本降幅 | **>2.5个百分点**，节约利息>4500亿/年 |
 | IMF口径估算 | **约60万亿**（占GDP 47.6%，与官方差距约50万亿） |
+
+> 2万亿置换额度发完后，剩余约4.5万亿隐性债务需地方自行化解。
 
 ## 核心机制
 
@@ -34,17 +39,23 @@ sources: [raw/articles/caixin-2026-debt-map.md, raw/articles/sina-swap-bond-2026
 
 | 来源 | 口径 | 规模 |
 |------|------|------|
-| 财政部（官方） | 纳入系统的隐债 | 14.3万亿（2023）→10.5万亿（2024） |
+| 财政部（官方） | 纳入系统的隐债 | 14.3万亿（2023）→10.5万亿（2024）→6.5万亿（2025估计）→2.5万亿（2026预测） |
 | IMF | 全口径估算 | 约60万亿（2023，占GDP 47.6%） |
 | Think China | 官方+未入账隐债 | 城投平台总缺口约34万亿 |
 
 > 官方数字与IMF估算存在巨大差异。部分隐性债务可能通过"漏报、瞒报"游离于监管之外。（参见 [[debt-gap]]）
 
-## 处置进展
+## 处置进展（截至2026年4月）
 
-- 广东、北京、上海宣告"全域隐债清零"
-- 内蒙古（2025年7月）、吉林成为首批退出化债重点省份
-- 截至2025年8月，6万亿置换债中4万亿已发行
+| 事件 | 时间 | 说明 |
+|------|------|------|
+| 广东、北京、上海 | 2024年前 | 完成"全域隐债清零" |
+| 内蒙古 | 2025年7月 | 首批退出化债重点省份 |
+| 吉林 | 2025年 | 首批退出化债重点省份 |
+| 34个城市 | 2026年以来 | 公布隐债清零任务最新进展 |
+| 5地清零 | 2026年4月 | 厦门、内蒙古、吉林、宁夏、新疆 |
+| 浙江、福建、河北 | 2026年4月 | 发行进度超过99% |
+| 甘肃、西藏、陕西来宾 | 2026年 | 年内隐债清零目标 |
 
 ## 关联
 

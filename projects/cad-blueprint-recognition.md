@@ -77,3 +77,34 @@ AI 语义理解 → 图纸摘要 + 关键要素提取
 ## 相关项目
 - [[drone-image-recognition|航拍图像识别]] — 实景与图纸对照
 - [[三维场景识别]] — 点云与BIM模型对比
+
+## 实测记录（2026-04-20）
+
+### 大桥图纸 PDF 分析
+
+**样本：** 6页路桥施工图，2384×1685 px/页
+
+**工具链：**
+- Docling v2.90.0 ✅ — PDF解析、布局检测、OCR
+- PyMuPDF ✅ — 页面渲染为PNG
+- pypdf ✅ — 文本/元信息读取
+- pdf2image ❌ — 需poppler后端
+- Vision工具 ❌ — 不支持本地路径
+
+**OCR有效内容：** 标高690/680/670、地层、强风化泥质灰岩、桩号D200/D220
+
+**已提取：** `/tmp/bridge_imgs/page_1.png` ~ `page_6.png`
+
+**环境：** `~/.cad-env`（docling + pymupdf + pdf2image + pypdf）
+
+### 来源（2026-04-20 OpenClaw 同步）
+
+**OpenClaw 工作区：** `~/.openclaw/workspace/cad-extraction/`
+**同步至：** `~/workspace/3DGS-Learning/projects/cad-extraction/`
+
+**OpenClaw 核心发现：**
+- DXF图纸：6,356实体、23图层、25块定义、579块引用 ✅
+- PDF图纸：6页完整提取（PyMuPDF） ✅
+- 数据入库：SQLite 4张表（components/annotations/dimensions/layers） ✅
+- **核心缺失：构件语义识别**（能提取几何，无法判断"这是桩基"还是"墩身"）
+- **放弃方向：画施工图**（EzDXF无法复制专业块定义）

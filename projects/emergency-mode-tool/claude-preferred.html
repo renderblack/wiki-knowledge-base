@@ -1,0 +1,25 @@
+html查看全部            
+            // 清除所有选择
+            document.querySelectorAll('.option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // 禁用所有下一步按钮
+            document.querySelectorAll('.next-btn').forEach(btn => {
+                btn.disabled = true;
+            });
+            
+            // 隐藏结果，显示第一题
+            document.getElementById('result').classList.remove('active');
+            document.querySelectorAll('.question-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('q1').classList.add('active');
+            
+            // 重置进度条
+            updateProgress(20);
+        }
+    </script>
+</body>
+</html>
+html 2在画布上打开 

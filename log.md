@@ -49,3 +49,20 @@ Sources:
 - Deliver: telegram
 - Skills: llm-wiki, karpathy-mental-models
 - Task: 搜索本周化债相关文章，抓取并保存到 ~/wiki/raw/articles/，如有新内容则更新 wiki-ingest-hint
+
+## [2026-04-21] update | 3DGS 压缩方案 + 批量压缩 + 坐标修复
+- 压缩方案文档：`projects/3dgs/3dgs-compression-plan.md`
+- 工作日志：`projects/3dgs/2025-04-21-work-log.md`
+- Data-Compression/：137个L20压缩至905MB（4.18×）
+- 合并文件：`point_cloud_L20_merged_correct.ply`（3.04GB，无缝）
+- 坐标公式修复：`world = SRS + raw_ply_xyz`（Box.Center勿加）
+- Skills：`3dgs-tile-model-workflow` + `splat-transform-compressed-ply`
+
+## [2026-04-21] create | 日结定时任务 + 项目进度页
+- 新增 cron job：每日 19:00 结构化日结（job_id: fb2e80cad6fa）
+- 新增：`projects/3dgs/PROGRESS.md`（按季度记录里程碑）
+
+## [2026-04-21] create | 课题进度页体系 + index.md 重建
+- 13个课题新建 PROGRESS.md：化债/每日观察/航拍/ACU/AI生态/CLI/VLM/EchoMan/钢铁/CAD识别/CAD生成/三维/REAL
+- 2个课题新建 INDEX.md：化债/航拍
+- 重建 wiki/index.md：清理重复章节，建立课题进度链接体系

@@ -1,5 +1,5 @@
 ---
-title: 小环境 — 公司·部门·团队
+title: 内部环境 — 公司·部门·团队
 created: 2026-04-19
 updated: 2026-04-19
 type: concept
@@ -7,7 +7,7 @@ tags: [career, company, team, micro-environment]
 sources: []
 ---
 
-# 小环境
+# 内部环境
 
 > 记录公司、部门、团队等微观环境的情况。
 
@@ -25,6 +25,8 @@ sources: []
 <!-- 待填写：公司的业务、战略、重点项目 -->
 
 ## 部门情况
+
+**虚拟技术部（2026年）：** [[entities/company/virtual-tech-dept-2026|部门说明书归档]]
 
 <!-- 待填写：部门的定位、团队规模、职责边界 -->
 

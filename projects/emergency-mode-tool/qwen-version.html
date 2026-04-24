@@ -1,0 +1,25 @@
+html查看全部    showToast("开始", "按直觉勾选即可（可多选）。右侧会实时给出最可能的应急模式。");
+  });
+  els.btnReset.addEventListener("click", resetAll);
+  els.btnExport.addEventListener("click", exportText);
+  els.btnCalm.addEventListener("click", calm60s);
+  els.btnSafety.addEventListener("click", safetyFirst);
+  els.btnQuickExit.addEventListener("click", quickExit);
+
+  // Keyboard shortcuts
+  window.addEventListener("keydown", (e) => {
+    if(e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
+    const k = e.key.toLowerCase();
+    if(k === "r") resetAll();
+    if(k === "c") exportText();
+    if(k === "s") quickExit();
+    if(k === "k") calm60s();
+  });
+
+  // Initial render
+  update();
+})();
+</script>
+</body>
+</html>
+html 1在画布上打开 

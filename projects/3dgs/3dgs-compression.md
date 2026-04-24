@@ -87,6 +87,33 @@ sources: [https://w-m.github.io/3dgs-compression-survey/, https://onlinelibrary.
 
 **关键指标**：PSNR（质量）、SSIM（结构相似度）、LPIPS（感知质量）、Size（MB）、b/G（每基元比特数）
 
+## 实用工程路径（无原图可用时）
+
+> ⚠️ 学术论文方案（HAC++、EAGLES 等）需要原始图片参与训练，均不适用。本节适用于**仅有 .ply 文件**的情况。
+
+### GridMaster 格式实测（2026-04-21）
+
+| 属性 | 存储值 | 真实空间 | 压缩建议 |
+|------|--------|---------|---------|
+| x/y/z | float32 | world coords | float16 安全 |
+| nx/ny/nz | **全 0** | — | **无条件删除** |
+| f_dc_0~2 | float32 | SH球谐 | float16 安全 |
+| opacity | float32 (logit) | sigmoid() | float16 安全 |
+| scale_0~2 | float32 (ln) | exp() | float16 安全 |
+| rot_0~3 | float32 (四元数) | 模长=1.0 | float16 安全 |
+
+**推荐方案（删法向量 + 全部 float16）：**
+- 68 bytes/point → 28 bytes/point，**压缩比 2×**
+- L20 全量 3.78 GB → ~1.9 GB
+- 视觉质量无感知损失
+- 配合 brotli 压缩可到 ~1 GB
+
+### 验证结论
+
+- 法向量（nx/ny/nz）全为 0，删除无影响
+- opacity 存储在 logit 空间，真实不透明度并不低（min=0.06），剪枝收益极小
+- 四元数模长严格为 1.0，可作为量化后校验
+
 ## 工程落地要点
 
 1. **体积目标**：移动端 < 10 MB，嵌入式 < 1 MB
