@@ -52,6 +52,7 @@
 | 4月10日 | 3DGS 本地环境搭建 |
 | 4月11日 | OpenClaw 文档重建（3DGS 部分关联） |
 | 4月23日 | session_search 根因调查：定位 FTS5 无法按日期过滤 + USER 消息截断导致 summary 误判两层 bug；GitHub tracker 脚本修复（Token + 去重正则）；UnityPlate 集成平台首次被发现 |
+| 4月24日 | OpenClaw + Windows Chrome CDP 自动化踩坑（文档归档 `openclaw-windows-chrome-cdp.md`）；Chrome remote-debugging-port 跨主机限制确认不通；Claude Code Windows 安装咨询 |
 
 ---
 

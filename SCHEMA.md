@@ -1,55 +1,50 @@
-# Wiki Schema — 中国经济转型与化债
+# Wiki Schema — 虚拟技术部知识库
 
 ## Domain
 
-中国地方政府债务风险化解（化债）政策体系、经济转型路径、财政货币政策协调。覆盖 2024—2026 年本轮化债周期全貌。
+本 wiki 覆盖三大领域：
+
+1. **虚拟技术部** — 兴土智瞰（G202501）、UnityPlate（交通工程三维可视化平台）、集成平台战略执行平台
+2. **中国经济** — 地方政府债务化解、房地产危机、财政货币政策、中国买单者
+3. **AI 前沿** — 3DGS（Gaussian Splatting）、AI Agent、VLM、多模态、CAD智能化
 
 ## Conventions
 
-- 文件名：小写、英文优先、中文可用（如 `hidden-debt.md`）
-- 每个 wiki 页面以 YAML frontmatter 开头
+- 文件名：小写、英文优先、中文可用（如 `hidden-debt.md`、`virtual-tech-dept-2026.md`）
+- 每个 wiki 页面以 YAML frontmatter 开头（title, created, updated, type, tags, sources）
 - 使用 `[[wikilinks]]` 关联其他页面（每页至少 2 条出链）
 - 更新页面时同步更新 `updated` 日期
-- 新页面必须加入 `index.md`
+- 新页面必须加入 `index.md` 相应章节
 - 所有操作追加到 `log.md`
+- `projects/` 目录保留但进 index，每项目至少一个 `PROGRESS.md` 记录里程碑
 
 ## Tag Taxonomy
 
-### 债务类型
-- `hidden-debt`: 隐性债务
-- `explicit-debt`: 显性债务
-- `lgfv-debt`: 城投债务
-- `refinancing`: 债务置换/再融资
+### 主体（Entities）
+- `company`: 公司（兴土桥梁、虚拟技术部）
+- `product`: 产品（兴土智瞰、UnityPlate）
+- `person`: 人物（老板朱兴土等）
+- `institution`: 机构（中央/地方政府、城投、银行）
 
-### 主体
-- `central-gov`: 中央政府（财政部、发改委、央行）
-- `local-gov`: 地方政府
-- `lgfv`: 城投平台公司
-- `bank-sector`: 银行体系
-
-### 政策工具
-- `bond-swap`: 置换债
-- `special-bond`: 专项债
+### 话题（Concepts）
+- `debt-resolution`: 化债
+- `property-crisis`: 房地产危机
 - `fiscal-policy`: 财政政策
 - `monetary-policy`: 货币政策
-- `debt-restructuring`: 债务重组
+- `macro-economy`: 宏观经济
+- `3dgs`: Gaussian Splatting
+- `ai-agent`: AI Agent
+- `vlm`: 视觉语言模型
+- `cad-intelligence`: CAD智能化
+- `construction-viz`: 施工可视化
+- `drone-imagery`: 航拍图像
 
-### 概念
-- `debt-resolution`: 化债（化解债务风险）
-- `fiscal-pressure`: 财政压力
-- `fiscal-deficit`: 财政赤字
-- `leverage`: 杠杆率
-- `property-crisis`: 房地产危机
-- `deflation`: 通缩
-- `investment`: 固定资产投资
-
-### 分析维度
-- `macro`: 宏观经济
-- `micro`: 微观主体（企业/居民）
-- `regional`: 区域差异
-- `timeline`: 时间线
+### 分析维度（Meta）
 - `comparison`: 对比分析
+- `timeline`: 时间线
+- `progress`: 进度追踪
 - `prediction`: 预测判断
+- `case-study`: 案例研究
 
 ## Page Thresholds
 
@@ -77,8 +72,24 @@
 3. frontmatter 标记：`contradictions: [page-name]`
 4. 在 lint 报告中标记给用户仲裁
 
-## 数据精确性规则
+## 目录结构
 
-- 政府数字精确到小数点后一位（如"4%左右"）
-- 机构名称用全称（如"财政部"非"财政部门"）
-- 百分比变化标注方向（"降至"vs"升至"）
+```
+wiki/
+├── index.md              ← 统一入口，总览所有课题
+├── SCHEMA.md              ← 本文件
+├── log.md                 ← 操作日志
+├── raw/                   ← Layer 1：原始资料（只读）
+│   ├── articles/          ← 网页剪藏
+│   └── papers/            ← 论文/PDF
+├── entities/              ← Layer 2：实体页
+│   └── company/           ← 公司/产品/人物
+├── concepts/              ← Layer 2：概念页
+│   ├── debt/              ← 化债相关概念
+│   └── tech/              ← AI/3DGS技术概念
+├── comparisons/           ← Layer 2：对比分析
+└── projects/              ← 项目进度（进 index）
+    ├── construction-progress-viz-system/
+    ├── 3d-visualization-platform/
+    └── ...
+```

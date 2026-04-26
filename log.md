@@ -66,3 +66,18 @@ Sources:
 - 13个课题新建 PROGRESS.md：化债/每日观察/航拍/ACU/AI生态/CLI/VLM/EchoMan/钢铁/CAD识别/CAD生成/三维/REAL
 - 2个课题新建 INDEX.md：化债/航拍
 - 重建 wiki/index.md：清理重复章节，建立课题进度链接体系
+
+## [2026-04-25] restructure | Wiki schema 全面整理
+- 更新 SCHEMA.md：扩展 domain 至「虚拟技术部 + 中国经济 + AI前沿」
+- 重建 index.md：按 Entity/Concept/Comparison/Projects 四层结构
+- 新建 entities/company/：virtual-tech-dept-2026, construction-progress-viz, unityplate
+- 新建 concepts/tech/：3dgs, ai-agent, vlm, cad-intelligence
+- concepts/debt/：将散在根目录的7个化债概念页迁入子目录
+- 删除 wiki/knowledge/ 孤儿目录
+- 迁移私人内容至 ~/.hermes/private/：self-understanding/, worldview/, career-development.md, micro-environment.md
+- 新建 raw/INDEX.md：12篇原始资料索引
+
+## [2026-04-25] update | 实体页信息补全
+- entities/company/unityplate.md：补充核心定位、功能模块（4个）、技术栈、验收状态、对照集成平台方案
+- entities/company/construction-progress-viz.md：补充核心定位、8大功能模块、技术栈、关键概念、验收状态
+- entities/company/virtual-tech-dept-2026.md：补充两大产品定位对比、技术栈差异、战略方向、当前挑战
